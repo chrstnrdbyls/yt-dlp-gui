@@ -1,0 +1,37 @@
+{
+  "format": 0,
+  "presets": {
+    "best": {
+      "default": true,
+      "args": ["-f", "bv*[ext=mp4]+ba[ext=m4a]/b[ext=mp4] / bv*+ba/b"],
+      "path": "",
+      "sponsorblock": 0,
+      "metadata": false,
+      "subtitles": false,
+      "thumbnail": false,
+      "filename": "%(title)s.%(ext)s",
+      "extra_args": ""
+    },
+    "mp4": {
+      "default": true,
+      "args": ["-f", "bv*[vcodec^=avc]+ba[ext=m4a]/b"],
+      "path": "",
+      "sponsorblock": 0,
+      "metadata": false,
+      "subtitles": false,
+      "thumbnail": false,
+      "filename": "%(title)s.%(ext)s",
+      "extra_args": ""
+    },
+    "mp3": {
+      "default": true,
+      "args": ["--extract-audio", "--audio-format", "mp3", "--audio-quality", "0"],
+      "path": "",
+      "sponsorblock": 0,
+      "metadata": false,
+      "thumbnail": false,
+      "filename": "%(title)s.%(ext)s",
+      "extra_args": ""
+    }
+  }
+}
